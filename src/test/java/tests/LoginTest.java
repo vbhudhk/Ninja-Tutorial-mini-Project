@@ -72,7 +72,7 @@ public class LoginTest extends BaseClass {
 			log.debug("User didn't log in");
 			actResult = "Failure";
 		}
-		Assert.assertNotEquals(actResult, expResult);
+		Assert.assertEquals(actResult, expResult);
 		// Assert.assertEquals(actResult, expResult);
 		log.info("Login Test got passed");
 	}
